@@ -12,13 +12,17 @@ public class distance {
     	d.inches = d.inches%12;
     	return d;
     }
+    public String toString() {
+    	return feet +" feet "+inches+" inches";
+    }
 	public static void main(String[] args) {
 		distance d1 = new distance(20,10);
-		distance d2 = d1;
+		distance d2 = new distance(60,30);
 		distance d = cal(d1,d2);
-		System.out.println("point 1: "+d1.feet+" feet "+d1.inches+" inches");
+		System.out.println("point 1: "+d1);
 		System.out.println("point 2: "+d2);
 		System.out.println("Distance: "+d);
+		
 		
 	}
 
